@@ -22,7 +22,7 @@ pan-2026/
 ├── pyproject.toml            # Package configuration
 ├── requirements.txt          # Dependencies
 │
-├── harshul/                  # User workspace
+├── pan/                      # User workspace
 │   ├── src/                  # Python source code
 │   │   ├── 001-logistic_regression/
 │   │   ├── 002-lightgbm/
