@@ -14,21 +14,6 @@ The PAN 2026 AI Detection task challenges participants to:
 - **Brier Score**: Probability calibration
 - **F1, C@1, F0.5u**: Additional evaluation metrics
 
-## Current Progress
-
-| Experiment | Model | PAN2025 Val ROC-AUC | HC3 (OOD) ROC-AUC | Status |
-|------------|-------|---------------------|-------------------|--------|
-| 001 | Logistic Regression + TF-IDF | 0.9953 | 0.5520 | Complete |
-| 002 | LightGBM + Stylometric Features | 0.9980 | 0.3356 | Complete |
-| 003 | DeBERTa-v3 Fine-tuning | 0.9948 | **0.5939** | Complete |
-
-### Key Findings
-
-1. **In-distribution performance is high** - All models achieve >99% ROC-AUC on PAN2026 validation
-2. **OOD generalization is the challenge** - Performance drops significantly on HC3 external dataset
-3. **DeBERTa provides modest improvement** - +4.2% OOD ROC-AUC vs LR baseline, but still far from target
-4. **Stylometric features overfit** - LightGBM with stylometrics performed *worse than random* on OOD data
-
 ## Repository Structure
 
 ```
